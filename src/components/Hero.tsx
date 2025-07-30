@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import heroImage from "@/assets/hero-bg.jpg";
+import circuitsImage from "@/assets/circuits-bg.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -10,9 +10,9 @@ const Hero = () => {
   return (
     <section id="inicio" className="min-h-screen flex items-center relative overflow-hidden">
       <div 
-        className="absolute inset-0 bg-gradient-hero opacity-90"
+        className="absolute inset-0 bg-black"
         style={{
-          backgroundImage: `url(${heroImage})`,
+          backgroundImage: `url(${circuitsImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundBlendMode: 'overlay'
