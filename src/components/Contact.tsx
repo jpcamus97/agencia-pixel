@@ -1,0 +1,116 @@
+import { Button } from "./ui/button";
+
+const Contact = () => {
+  return (
+    <section id="contacto" className="py-20 bg-gradient-to-b from-muted/20 to-background">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              ¿Listo para <span className="bg-gradient-primary bg-clip-text text-transparent">Comenzar?</span>
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Hablemos sobre tu próximo proyecto y cómo podemos ayudarte a alcanzar tus objetivos
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="bg-gradient-card border border-primary/10 rounded-xl p-8">
+              <h3 className="text-2xl font-bold mb-6">Información de Contacto</h3>
+              
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
+                    <span className="text-primary">📧</span>
+                  </div>
+                  <div>
+                    <div className="font-semibold">Email</div>
+                    <div className="text-muted-foreground">hola@agenciapixel.com</div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
+                    <span className="text-primary">📱</span>
+                  </div>
+                  <div>
+                    <div className="font-semibold">Teléfono</div>
+                    <div className="text-muted-foreground">+1 (555) 123-4567</div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
+                    <span className="text-primary">⏰</span>
+                  </div>
+                  <div>
+                    <div className="font-semibold">Horario</div>
+                    <div className="text-muted-foreground">Lun - Vie: 9:00 - 18:00</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-8 pt-8 border-t border-primary/10">
+                <h4 className="font-semibold mb-4">Síguenos</h4>
+                <div className="flex gap-4">
+                  <Button variant="glow" size="sm">LinkedIn</Button>
+                  <Button variant="glow" size="sm">Twitter</Button>
+                  <Button variant="glow" size="sm">Instagram</Button>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-card border border-primary/10 rounded-xl p-8">
+              <h3 className="text-2xl font-bold mb-6">Envíanos un Mensaje</h3>
+              
+              <form className="space-y-6">
+                <div>
+                  <label className="block text-sm font-medium mb-2">Nombre</label>
+                  <input 
+                    type="text" 
+                    className="w-full p-3 bg-background border border-border rounded-lg focus:border-primary focus:outline-none transition-colors"
+                    placeholder="Tu nombre completo"
+                  />
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium mb-2">Email</label>
+                  <input 
+                    type="email" 
+                    className="w-full p-3 bg-background border border-border rounded-lg focus:border-primary focus:outline-none transition-colors"
+                    placeholder="tu@email.com"
+                  />
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium mb-2">Servicio de Interés</label>
+                  <select className="w-full p-3 bg-background border border-border rounded-lg focus:border-primary focus:outline-none transition-colors">
+                    <option>Desarrollo Web</option>
+                    <option>Modelo de Negocio</option>
+                    <option>Gestión de Productos</option>
+                    <option>Consultoría Integral</option>
+                  </select>
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium mb-2">Mensaje</label>
+                  <textarea 
+                    rows={4}
+                    className="w-full p-3 bg-background border border-border rounded-lg focus:border-primary focus:outline-none transition-colors resize-none"
+                    placeholder="Cuéntanos sobre tu proyecto..."
+                  ></textarea>
+                </div>
+                
+                <Button variant="hero" size="lg" className="w-full">
+                  Enviar Mensaje
+                </Button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
