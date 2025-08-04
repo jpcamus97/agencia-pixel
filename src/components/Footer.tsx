@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-primary/10 mt-12 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2024 Agencia Pixel. Todos los derechos reservados.</p>
+          <p>&copy; 2025 Agencia Pixel. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
