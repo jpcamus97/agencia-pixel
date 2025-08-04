@@ -29,11 +29,11 @@ const About = () => {
               
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">50+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">10+</div>
                   <div className="text-sm text-muted-foreground">Proyectos Completados</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">98%</div>
+                  <div className="text-3xl font-bold text-primary mb-2">100%</div>
                   <div className="text-sm text-muted-foreground">Satisfacción del Cliente</div>
                 </div>
               </div>
