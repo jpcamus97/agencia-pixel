@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const scrollToSection = (id: string) => {
@@ -10,7 +11,7 @@ const Header = () => {
     <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-gradient-primary rounded"></div>
+          <img src={logo} alt="Agencia Pixel" className="w-8 h-8" />
           <span className="text-xl font-bold">Agencia Pixel</span>
         </div>
         

@@ -25,17 +25,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-semibold">Email</div>
-                    <div className="text-muted-foreground">hola@agenciapixel.com</div>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
-                    <span className="text-primary">📱</span>
-                  </div>
-                  <div>
-                    <div className="font-semibold">Teléfono</div>
-                    <div className="text-muted-foreground">+1 (555) 123-4567</div>
+                    <div className="text-muted-foreground">agenciapixelcl@gmail.com</div>
                   </div>
                 </div>
                 
@@ -45,7 +35,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-semibold">Horario</div>
-                    <div className="text-muted-foreground">Lun - Vie: 9:00 - 18:00</div>
+                    <div className="text-muted-foreground">Lun - Dom: 7:00 - 20:00</div>
                   </div>
                 </div>
               </div>
@@ -53,9 +43,13 @@ const Contact = () => {
               <div className="mt-8 pt-8 border-t border-primary/10">
                 <h4 className="font-semibold mb-4">Síguenos</h4>
                 <div className="flex gap-4">
-                  <Button variant="glow" size="sm">LinkedIn</Button>
-                  <Button variant="glow" size="sm">Twitter</Button>
-                  <Button variant="glow" size="sm">Instagram</Button>
+                  <Button 
+                    variant="glow" 
+                    size="sm"
+                    onClick={() => window.open('https://www.linkedin.com/company/agencia-pixel/?viewAsMember=true', '_blank')}
+                  >
+                    LinkedIn
+                  </Button>
                 </div>
               </div>
             </div>
