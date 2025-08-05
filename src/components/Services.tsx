@@ -57,7 +57,7 @@ const Services = () => {
                 {service.description}
               </p>
               
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center gap-2 text-sm">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
@@ -65,15 +65,6 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
-              
-              <Button 
-                variant="glow" 
-                size="sm" 
-                className="w-full"
-                onClick={scrollToContact}
-              >
-                Solicitar Información
-              </Button>
             </div>
           ))}
         </div>
