@@ -57,13 +57,15 @@ const Contact = () => {
             <div className="bg-gradient-card border border-primary/10 rounded-xl p-8">
               <h3 className="text-2xl font-bold mb-6">Envíanos un Mensaje</h3>
               
-              <form className="space-y-6">
+              <form action="https://formspree.io/f/xeozraon" method="POST" className="space-y-6">
                 <div>
                   <label className="block text-sm font-medium mb-2">Nombre</label>
                   <input 
                     type="text" 
+                    name="name"
                     className="w-full p-3 bg-background border border-border rounded-lg focus:border-primary focus:outline-none transition-colors"
                     placeholder="Tu nombre completo"
+                    required
                   />
                 </div>
                 
@@ -71,14 +73,16 @@ const Contact = () => {
                   <label className="block text-sm font-medium mb-2">Email</label>
                   <input 
                     type="email" 
+                    name="email"
                     className="w-full p-3 bg-background border border-border rounded-lg focus:border-primary focus:outline-none transition-colors"
                     placeholder="tu@email.com"
+                    required
                   />
                 </div>
                 
                 <div>
                   <label className="block text-sm font-medium mb-2">Servicio de Interés</label>
-                  <select className="w-full p-3 bg-background border border-border rounded-lg focus:border-primary focus:outline-none transition-colors">
+                  <select name="service" className="w-full p-3 bg-background border border-border rounded-lg focus:border-primary focus:outline-none transition-colors">
                     <option>Desarrollo Web</option>
                     <option>Modelo de Negocio</option>
                     <option>Gestión de Productos</option>
@@ -90,8 +94,10 @@ const Contact = () => {
                   <label className="block text-sm font-medium mb-2">Mensaje</label>
                   <textarea 
                     rows={4}
+                    name="message"
                     className="w-full p-3 bg-background border border-border rounded-lg focus:border-primary focus:outline-none transition-colors resize-none"
                     placeholder="Cuéntanos sobre tu proyecto..."
+                    required
                   ></textarea>
                 </div>
                 
