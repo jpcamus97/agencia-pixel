@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-hero border-t border-primary/10">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <img src={logo} alt="Agencia Pixel" className="w-8 h-8" />
@@ -21,16 +21,6 @@ const Footer = () => {
                 <span className="text-primary">in</span>
               </div>
             </div>
-          </div>
-          
-          <div>
-            <h4 className="font-semibold mb-4">Servicios</h4>
-            <ul className="space-y-2 text-muted-foreground">
-              <li className="hover:text-primary cursor-pointer transition-colors">Desarrollo Web</li>
-              <li className="hover:text-primary cursor-pointer transition-colors">Modelos de Negocio</li>
-              <li className="hover:text-primary cursor-pointer transition-colors">Gestión de Productos</li>
-              <li className="hover:text-primary cursor-pointer transition-colors">Consultoría</li>
-            </ul>
           </div>
           
           <div>
