@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import circuitsImage from "@/assets/circuits-bg.jpg";
+import heroColorfulImage from "@/assets/hero-colorful.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -12,7 +12,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-black"
         style={{
-          backgroundImage: `url(${circuitsImage})`,
+          backgroundImage: `url(${heroColorfulImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundBlendMode: 'overlay'

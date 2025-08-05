@@ -31,6 +31,16 @@ const Contact = () => {
                 
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
+                    <span className="text-primary">📞</span>
+                  </div>
+                  <div>
+                    <div className="font-semibold">Teléfono</div>
+                    <div className="text-muted-foreground">+56946645535</div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
                     <span className="text-primary">⏰</span>
                   </div>
                   <div>

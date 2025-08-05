@@ -26,6 +26,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Contacto</h4>
             <ul className="space-y-2 text-muted-foreground">
+              <li>+56946645535</li>
               <li>agenciapixelcl@gmail.com</li>
               <li>Lun - Dom: 7:00 - 20:00</li>
             </ul>
