@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section id="inicio" className="min-h-screen flex items-center relative overflow-hidden">
       <div 
-        className="absolute inset-0 bg-black"
+        className="absolute inset-0 bg-black/40"
         style={{
           backgroundImage: `url(${heroColorfulImage})`,
           backgroundSize: 'cover',
@@ -21,7 +21,7 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent leading-tight pb-2">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent leading-tight pb-4">
             Agencia Pixel
           </h1>
           
