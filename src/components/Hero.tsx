@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section id="inicio" className="min-h-screen flex items-center relative overflow-hidden">
       <div 
-        className="absolute inset-0 bg-black/40"
+        className="absolute inset-0 bg-black/60"
         style={{
           backgroundImage: `url(${heroColorfulImage})`,
           backgroundSize: 'cover',
@@ -25,7 +25,7 @@ const Hero = () => {
             Agencia Pixel
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-foreground mb-8 max-w-2xl mx-auto drop-shadow-lg">
             Transformamos ideas en experiencias digitales extraordinarias. 
             Desarrollo web, modelos de negocio y gestión de productos que impulsan tu crecimiento.
           </p>
