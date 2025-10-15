@@ -11,7 +11,9 @@ const Header = () => {
     <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <img src={logo} alt="Agencia Pixel" className="w-8 h-8" />
+          <div className="w-10 h-10 bg-background rounded-lg p-1 flex items-center justify-center">
+            <img src={logo} alt="Agencia Pixel" className="w-full h-full object-contain" />
+          </div>
           <span className="text-xl font-bold">Agencia Pixel</span>
         </div>
         
